@@ -129,8 +129,8 @@ class CartProvider with ChangeNotifier {
     }
   }
 
-  void addProduct(Product product) {
-    _items.add(product);
+  void clearCart() {
+    _cartItems.clear();
     notifyListeners();
   }
 }
